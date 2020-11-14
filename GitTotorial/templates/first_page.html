@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form action='/step_to_save' method="POST">
+
+<div class="highband">
+    <h1>Write your own plans at the day</h1>
+</div>
+
+<table style="text-align: left;">
+    <h3>Chooce the day and add your plans</h3>
+    <tr aria-colspan="2" aria-rowspan="2">
+        <td><input type="text" name="day" placeholder="Today"><input type="submit"  class="save" name="submit" value="Save">
+        <td><textarea type="text" name="plan" placeholder="12:00 - lunch"></textarea></td>
+    </tr>
+</table>
+<br>
+<table class="result">
+    <h3>The last plan</h3>
+    <tr aria-colspan="2" aria-rowspan="2">
+        <td>{{ the_day }}</td>
+        <td>{{ the_plan }}</td>
+    </tr>    
+</table>
+
+{% endblock %}

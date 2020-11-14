@@ -1,0 +1,61 @@
+body{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+}
+table{
+    background-color: lightgreen;
+    color: black;
+    width: 525px; /* Ширина таблицы */
+    border: 1px solid white; /* Рамка вокруг таблицы */
+    margin: auto;
+    caption-side: bottom;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px 5px 2px;
+}
+td, th{
+    text-align: left;
+    border: 1px solid peru;
+}
+.result{
+    background-color: black;
+    color: lightgreen;
+}
+input{
+    background-color: black;
+    color: lightgreen;
+    width: 100px;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+textarea{
+    background-color: black;
+    color: lightgreen;
+    width: 300px;
+    height: 250px;
+    font-size: 18px;
+}
+textarea::placeholder{
+    color: gray;
+}
+.highband{
+    color: lightgreen;
+}
+.save{
+    background-color: green;
+    color: white
+}
+.tableresult{
+    width: 400px;
+    font-size: 22px;
+}
+.dbtable{
+    background-color: black;
+    color: peru;
+}

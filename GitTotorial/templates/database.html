@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<table class="dbtable" style="text-align: center;">
+    <tr>
+        {% for row_title in the_row_titles %}
+            <th>{{row_title}}</th>
+        {% endfor %}
+    </tr>
+    <tr>
+        {% for infoplan_row in the_data %}
+        <tr>
+            {% for item in infoplan_row %}
+                <td>{{item}}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+    </tr>
+    
+</table>
+
+{% endblock %}
